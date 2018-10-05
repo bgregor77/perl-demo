@@ -1,0 +1,9 @@
+applications:
+- name: bg-perl-demo
+  buildpack: https://github.com/bgregor77/cf-buildpack-perl.git
+  disk_quota: 100MB
+  instances: 1
+  memory: 500MB
+  routes:
+  - route: bg-perl-demo.cfapps.io
+  stack: cflinuxfs2
